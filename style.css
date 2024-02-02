@@ -81,7 +81,7 @@ body {
 
 video {
     min-height: 100%; /*ocupar a tela inteira de altura*/
-    min-width: 100%; /*ocupar a tela inteira de largura*/
+    min-width: 100%; /*ocupar tela inteira de largura*/
     position: fixed;
     top: 0;
 }
