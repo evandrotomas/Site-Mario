@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+.logo-mario {
+    height: 200px;
+}
+
+button {
+    color: white;
+    /*cor da fonte*/
+    background-color: #c51111;
+    /*cor de fundo*/
+    border-radius: 3px;
+    /*borda*/
+    border: none;
+    /*tirar sombra da borda*/
+    width: 200px;
+    /*largura*/
+    height: 50px;
+    /*altura*/
+    cursor: pointer;
+    /*mudar cursor ao passar mouse*/
+    text-transform: uppercase;
+    /*texto emcaixa alta*/
+    font-weight: bold;
+    /*colocar em negrito*/
+    margin-top: 30px;
+    /*cria um margem no topo*/
+}
+
+
+.imagem-mario-luigi {
+    height: 500px;
+    /*altura*/
+}
+
+
+body {
+    height: 100%;
+    /*ocupar a tela inteira*/
+}
+
+.caixa-mae {
+    display: flex;
+    /*organizar elementos da pagina*/
+    align-items: center;
+    /*alinhar intens ao centro no eixo vertical*/
+    justify-content: space-around;
+    /*cria um espaçamento menor entre o itens no eixo horizontal*/
+    padding: 100px;
+    /*espaçamento interno*/
+    height: 75vh;
+    /*altura*/
+}
+
+.caixa-mae button:hover {
+    color: #000000;
+    background-color: rgb(5, 138, 16);
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.caixa-principal {
+    width: 40%;
+}
+
+.caixa-video {
+    position: fixed;
+    /*fixar video*/
+    top: 0;
+    /*fixar todo em cima*/
+    z-index: -1;
+    /*colocar video no fundo*/
+
+}
+
+video {
+    min-height: 100%; /*ocupar a tela inteira de altura*/
+    min-width: 100%; /*ocupar a tela inteira de largura*/
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+p {
+    color: white;
+    font-size: 15px;
+}
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.link-whatsapp img:hover {
+    transform: scale(1.5);
+    transition: 0.4s ease-in-out;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+
+}
+
+.header img {
+    height: 60px;
+}
+
+
+.header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 26px;
+    transition: 0.4s ease-in-out;
+}
+
+.formulario-fale-conosco {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    left: -300px;
+    top: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    
+    transition: left 1s ease-in-out;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18D80F;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18D80F;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+.header img:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+
+ @media(max-width: 1100px) {
+    
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imagem-mario-luigi {
+        width: 80vw;
+        height: auto;
+        margin: 20px;
+    }
+
+    .header {
+        margin:50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .header a {
+        font-size: 22px;
+
+    }
+    
+ }
